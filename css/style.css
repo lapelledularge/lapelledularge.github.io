@@ -454,7 +454,7 @@ figure {
 
 /* === Custom CSS === */
 .fh5co-tab-wrap .fh5co-tab-content .fh5co-content-inner {
-    padding: 3em 2em 5em 2em;
+    padding: 3em 2em 4em 2em;
 }
 
 .col-md-offset-3 {
@@ -469,18 +469,65 @@ figure {
     opacity: 0.5;
 }
 
-a {
-    color: #0089ff;
-}
-
-a:hover {
-    color: #0089ff;
-}
-
 .fh5co-social li a:hover {
     color: #0089ff;
 }
 
-a:visited {
+.fh5co-social li.active-info a {
     color: #0089ff;
+}
+
+a {
+    color: #0089ff;
+}
+a:hover, a:active, a:focus a:visited {
+    color: #0089ff;
+}
+
+::-webkit-selection {
+    color: #fff;
+    background: #0089ff;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #0089ff;
+}
+
+::selection {
+    color: #fff;
+    background: #0089ff;
+}
+
+.fh5co-counter .fh5co-number {
+    color: #0089ff;
+}
+
+.fh5co-feature .fh5co-icon i {
+    color: #0089ff;
+}
+
+.fh5co-tab-wrap .fh5co-tab-menu li a:after {
+  background: #0089ff;
+}
+
+#fh5co-main {
+    min-height: 400px;
+}
+
+.icon-data {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    display: none;
+    font-family: "Source Sans Pro", Arial, sans-serif !important;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #0089ff;
+}
+
+.active-info .icon-data {
+  display: inline-block;
 }
