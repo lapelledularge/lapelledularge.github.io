@@ -7,8 +7,8 @@
 }
 /* =======================================================
 *
-* 	Template Style 
-*	Edit this section
+*   Template Style 
+* Edit this section
 *
 * ======================================================= */
 body {
@@ -465,8 +465,12 @@ figure {
     width: 70%;
 }
 
-#fh5co-footer {
+small {
     opacity: 0.5;
+}
+
+#fh5co-main {
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .fh5co-social li a:hover {
@@ -516,9 +520,9 @@ a:hover, a:active, a:focus a:visited {
 }
 
 .icon-data {
-    -webkit-transition: 2s;
-    -o-transition: 2s;
-    transition: 2s;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     transition-property: width max-width max-height;
     display: inline-block;
@@ -531,13 +535,53 @@ a:hover, a:active, a:focus a:visited {
     line-height: 1.5;
     color: #0089ff;
     vertical-align: middle;
+    padding-left: 1em;
 }
 
 .active-info .icon-data {
     max-width: 100%;
-    padding-left: 1em;
 }
 
 a .icon-data:hover {
     text-decoration: none;
 }
+
+.bg {
+  width: 1px;
+  height: 1px;
+}
+
+body {
+  background-position: fixed;
+  background-size: cover;
+}
+
+#bgTemp {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.5;
+}
+
+#bgs {
+  display: none;
+}
+
+/*li.icon {
+    -webkit-transition: 20s;
+    -o-transition: 20s;
+    transition: 20s;
+}
+
+.fh5co-social li a {
+    text-align: left;
+    -webkit-transition: 20s;
+    -o-transition: 20s;
+    transition: 20s;
+    transition-property: width max-width;
+}*/
