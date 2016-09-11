@@ -486,6 +486,7 @@ small {
 a {
     color: #0089ff;
 }
+
 a:hover, a:active, a:focus, a:visited {
     color: #0089ff;
 }
@@ -580,11 +581,35 @@ body {
 
 #fh5co-main {
     background: rgba(0, 8, 26, 0.75);
+    /*margin: 12em auto 5em auto;*/
 }
 
 span.reverse {
   unicode-bidi: bidi-override;
   direction: rtl;
+}
+
+.mw-bg-icons {
+  margin: 0.2em;
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+.mw-bg-ctrls a:hover, .mw-bg-ctrls a:active, .mw-bg-ctrls a:focus {
+    text-decoration: none;
+}
+
+.mw-bg-ctrls {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.icon-arrow-left, .icon-arrow-right {
+  opacity: 0;
 }
 
 /*li.icon {
