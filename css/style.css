@@ -38,6 +38,7 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 a:hover, a:active, a:focus {
   color: #17e7a4;
   outline: none;
@@ -454,6 +455,7 @@ figure {
 
 /* === Custom CSS === */
 .fh5co-tab-wrap .fh5co-tab-content .fh5co-content-inner {
+    /*padding: 5em 2em 4em 2em;*/
     padding: 3em 2em 4em 2em;
 }
 
@@ -484,7 +486,7 @@ small {
 a {
     color: #0089ff;
 }
-a:hover, a:active, a:focus a:visited {
+a:hover, a:active, a:focus, a:visited {
     color: #0089ff;
 }
 
@@ -570,6 +572,19 @@ body {
 
 #bgs {
   display: none;
+}
+
+#fh5co-footer {
+  background: #00081a;
+}
+
+#fh5co-main {
+    background: rgba(0, 8, 26, 0.75);
+}
+
+span.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
 }
 
 /*li.icon {

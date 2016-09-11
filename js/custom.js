@@ -79,10 +79,15 @@
 		});
 	}
 
+	var createEmailAdress = function () {
+		$("#email").text($("#email").text().replace("nawak", "@"))
+	}
+
 	// Document on load.
 	$(function(){
 		backgroundMng();
 		infoClickInit();
+		createEmailAdress();
 	});
 
 
