@@ -132,8 +132,8 @@
 
 			} else { // it's expanded, let's compress it
 				// Change icon
-				$("#bgExpandCompress").removeClass("icon-expand");
-				$("#bgExpandCompress").addClass("icon-compress");
+				$("#bgExpandCompress").removeClass("icon-compress");
+				$("#bgExpandCompress").addClass("icon-expand");
 
 				// Compress header
 				$("#fh5co-main").css("margin-top", "5em")
