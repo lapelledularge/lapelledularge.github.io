@@ -455,8 +455,8 @@ figure {
 
 /* === Custom CSS === */
 .fh5co-tab-wrap .fh5co-tab-content .fh5co-content-inner {
-    /*padding: 5em 2em 4em 2em;*/
-    padding: 3em 2em 4em 2em;
+    padding: 5em 2em 4em 2em;
+    /*padding: 3em 2em 4em 2em;*/
 }
 
 .col-md-offset-3 {
@@ -581,6 +581,7 @@ body {
 
 #fh5co-main {
     background: rgba(0, 8, 26, 0.75);
+    overflow: visible;
     /*margin: 12em auto 5em auto;*/
 }
 
@@ -603,9 +604,10 @@ span.reverse {
 }
 
 .mw-bg-ctrls {
-    position: fixed;
-    top: 0px;
+    position: relative;
+    top: -1.5em;
     right: 0px;
+    float: right;
 }
 
 .icon-arrow-left, .icon-arrow-right {
