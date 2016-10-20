@@ -568,11 +568,15 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  opacity: 0.5;
+  opacity: 0;
 }
 
 #bgs {
   display: none;
+}
+
+.bgScroll {
+  background-position: 0% 50%;
 }
 
 #fh5co-footer {

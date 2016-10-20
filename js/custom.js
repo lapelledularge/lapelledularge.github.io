@@ -156,10 +156,22 @@
 		})
 	}
 
+	var bgScroll = function() {
+		$( window ).scroll(function() {
+			var scrollPos = $(document).scrollTop();
+			var pageHeight = $(document).height() - Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+			var bgPosition = 100 * (scrollPos / pageHeight);
+
+			$(".bgScroll").css("background-position", "0% " + bgPosition + "%");
+		});
+	};
+
+
 	// Document on load.
 	$(function(){
 		backgroundMng();
 		infoClickInit();
+		// bgScroll();
 		createEmailAdress();
 		toogleBgExpand();
 	});
