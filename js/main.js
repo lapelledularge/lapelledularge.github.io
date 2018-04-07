@@ -24,7 +24,7 @@
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
-
+	
 	var getHeight = function() {
 		var extraHeight = 0;
 
@@ -37,6 +37,14 @@
 		}, 200);
 	};
 
+	var tabContainer = function() {
+		getHeight();
+		$(window).resize(function(){
+			getHeight();
+		})
+	};
+
+/*
 	var pieChart = function() {
 		$('.chart').easyPieChart({
 			scaleColor: false,
@@ -47,13 +55,6 @@
 			size: 160,
 			animate: 1000
 		});
-	};
-
-	var tabContainer = function() {
-		getHeight();
-		$(window).resize(function(){
-			getHeight();
-		})
 	};
 
 	var tabClickTrigger = function() {
@@ -83,11 +84,12 @@
 			
 		})
 	};
+	*/
 
 	// Document on load.
 	$(function(){
 		tabContainer();
-		tabClickTrigger();
+		// tabClickTrigger();
 
 	});
 
