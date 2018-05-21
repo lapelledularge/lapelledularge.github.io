@@ -47,11 +47,11 @@
 	}
 
 	var previousBackground = function() {
-		bgParams.i--;
+		bgParams.i++;
 
 		if (bgParams.max != -1) {
-			if (bgParams.i < 0){
-				bgParams.i = bgParams.max - 1;
+			if (bgParams.i >= bgParams.max){
+				bgParams.i = 0;
 			}
 
 			setBg(bgParams.i);
@@ -59,11 +59,11 @@
 	}
 
 	var nextBackground = function() {
-		bgParams.i++;
+		bgParams.i--;
 
 		if (bgParams.max != -1) {
-			if (bgParams.i >= bgParams.max){
-				bgParams.i = 0;
+			if (bgParams.i < 0){
+				bgParams.i = bgParams.max - 1;
 			}
 
 			setBg(bgParams.i);
